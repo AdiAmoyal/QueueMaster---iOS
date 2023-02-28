@@ -13,6 +13,14 @@
 		911BCE6929AE9F930008282E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 911BCE6829AE9F930008282E /* Preview Assets.xcassets */; };
 		911BCE6B29AE9F930008282E /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911BCE6A29AE9F930008282E /* Persistence.swift */; };
 		911BCE6E29AE9F930008282E /* QueueMaster.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 911BCE6C29AE9F930008282E /* QueueMaster.xcdatamodeld */; };
+		911BCE9529AEA0BC0008282E /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911BCE9429AEA0BC0008282E /* CalendarView.swift */; };
+		911BCE9829AEA5870008282E /* CalendarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911BCE9729AEA5870008282E /* CalendarExtension.swift */; };
+		911BCE9A29AEA5E50008282E /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911BCE9929AEA5E50008282E /* DateExtension.swift */; };
+		911BCE9C29AEA6020008282E /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911BCE9B29AEA6020008282E /* ViewExtension.swift */; };
+		911BCE9E29AEA7BB0008282E /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911BCE9D29AEA7BB0008282E /* HeaderView.swift */; };
+		911BCEA129AEAF380008282E /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911BCEA029AEAF380008282E /* Task.swift */; };
+		911BCEA329AEAF670008282E /* TaskCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911BCEA229AEAF670008282E /* TaskCategory.swift */; };
+		911BCEA529AEAFF10008282E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911BCEA429AEAFF10008282E /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +31,14 @@
 		911BCE6829AE9F930008282E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		911BCE6A29AE9F930008282E /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		911BCE6D29AE9F930008282E /* QueueMaster.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QueueMaster.xcdatamodel; sourceTree = "<group>"; };
+		911BCE9429AEA0BC0008282E /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		911BCE9729AEA5870008282E /* CalendarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarExtension.swift; sourceTree = "<group>"; };
+		911BCE9929AEA5E50008282E /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		911BCE9B29AEA6020008282E /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		911BCE9D29AEA7BB0008282E /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		911BCEA029AEAF380008282E /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		911BCEA229AEAF670008282E /* TaskCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCategory.swift; sourceTree = "<group>"; };
+		911BCEA429AEAFF10008282E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +71,10 @@
 		911BCE6029AE9F900008282E /* QueueMaster */ = {
 			isa = PBXGroup;
 			children = (
+				911BCE9F29AEAF2C0008282E /* Model */,
+				911BCE9629AEA5630008282E /* Extensions */,
+				911BCE9329AEA0A10008282E /* View */,
 				911BCE6129AE9F900008282E /* QueueMasterApp.swift */,
-				911BCE6329AE9F900008282E /* ContentView.swift */,
 				911BCE6529AE9F930008282E /* Assets.xcassets */,
 				911BCE6A29AE9F930008282E /* Persistence.swift */,
 				911BCE6C29AE9F930008282E /* QueueMaster.xcdatamodeld */,
@@ -71,6 +89,36 @@
 				911BCE6829AE9F930008282E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		911BCE9329AEA0A10008282E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				911BCE6329AE9F900008282E /* ContentView.swift */,
+				911BCE9429AEA0BC0008282E /* CalendarView.swift */,
+				911BCE9D29AEA7BB0008282E /* HeaderView.swift */,
+				911BCEA429AEAFF10008282E /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		911BCE9629AEA5630008282E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				911BCE9729AEA5870008282E /* CalendarExtension.swift */,
+				911BCE9929AEA5E50008282E /* DateExtension.swift */,
+				911BCE9B29AEA6020008282E /* ViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		911BCE9F29AEAF2C0008282E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				911BCEA029AEAF380008282E /* Task.swift */,
+				911BCEA229AEAF670008282E /* TaskCategory.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,10 +191,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				911BCE9529AEA0BC0008282E /* CalendarView.swift in Sources */,
+				911BCE9E29AEA7BB0008282E /* HeaderView.swift in Sources */,
+				911BCEA129AEAF380008282E /* Task.swift in Sources */,
+				911BCE9A29AEA5E50008282E /* DateExtension.swift in Sources */,
 				911BCE6B29AE9F930008282E /* Persistence.swift in Sources */,
 				911BCE6E29AE9F930008282E /* QueueMaster.xcdatamodeld in Sources */,
 				911BCE6429AE9F900008282E /* ContentView.swift in Sources */,
 				911BCE6229AE9F900008282E /* QueueMasterApp.swift in Sources */,
+				911BCE9C29AEA6020008282E /* ViewExtension.swift in Sources */,
+				911BCEA529AEAFF10008282E /* HomeView.swift in Sources */,
+				911BCE9829AEA5870008282E /* CalendarExtension.swift in Sources */,
+				911BCEA329AEAF670008282E /* TaskCategory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
